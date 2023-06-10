@@ -1,0 +1,43 @@
+﻿@model CreateStuVM
+@{
+    ViewData["Title"] = "Create";
+
+}
+<section class="pcoded-main-container">
+    <div class="pcoded-content">
+        <div class="row">
+            <div class="col-12">
+                <form method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label>Images</label>
+                        <input class="form-control" asp-for="Photo">
+                        <span class="text-danger" asp-validation-for="Photo"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Images</label>
+                        <input class="form-control" asp-for="Name">
+                        <span class="text-danger" asp-validation-for="Name"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Images</label>
+                        <input class="form-control" asp-for="Description">
+                        <span class="text-danger" asp-validation-for="Description"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Images</label>
+                        <input class="form-control" asp-for="FacultyId">
+                        <span class="text-danger" asp-validation-for="FacultyId"></span>
+                    </div>
+
+
+                    <button type="submit" class="my-2 btn btn-success"><i class="feather mr-2 icon-check-circle"></i>Create</button>
+                    <a asp-action="Index" class="my-2 btn btn-secondary"><i class="feather mr-2 icon-check-circle"></i>Cancel</a>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
